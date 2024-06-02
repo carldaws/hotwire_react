@@ -49,7 +49,7 @@ This will install the necessary JavaScript dependencies and copy the required fi
 
 Create a React component in app/javascript/components, an example component is already created for you:
 
-```{tsx}
+```tsx
 import React from "react";
 
 type HelloProps = {
@@ -73,7 +73,7 @@ export default Hello
 
 Make sure you add this component to the components/index.ts:
 
-```{ts}
+```ts
 import Hello from "./Hello";
 
 interface Components {
@@ -92,7 +92,7 @@ export default components;
 
 Now you can use the component in a Rails view:
 
-```{erb}
+```rb
 <%= component "Hello" %>
 ```
 
@@ -100,7 +100,7 @@ Now you can use the component in a Rails view:
 
 You can pass props (if required by your components) as follows:
 
-```{erb}
+```rb
 <%= component "Hello", { name: @name } %>
 ```
 
@@ -108,7 +108,7 @@ You can pass props (if required by your components) as follows:
 
 With the useTurboFetch hook you can continue to use TurboStreams to update page content as you would in a standard Rails application. Create a React form that uses the hook like so:
 
-```{tsx}
+```tsx
 import React, { useState, FormEvent, ChangeEvent } from "react";
 import useTurboFetch from "../hooks/useTurboFetch";
 
