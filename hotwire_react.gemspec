@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative "lib/turbo_react/version"
+require_relative "lib/hotwire_react/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "turbo_react"
-  spec.version = TurboReact::VERSION
+  spec.name = "hotwire_react"
+  spec.version = HotwireReact::VERSION
   spec.authors = ["Carl Dawson"]
   spec.email = ["carldawson@hey.com"]
 
   spec.summary = "Adds React to Rails 7 apps which use jsbundling."
-  spec.description = "turbo_react integrates React into Rails 7 apps and allows you to combine the power of Hotwire with React."
-  spec.homepage = "https://github.com/carldaws/turbo_react"
+  spec.description = "HotwireReact integrates React into Rails 7 apps and allows you to combine the power of Hotwire with React."
+  spec.homepage = "https://github.com/carldaws/hotwire_react"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
 

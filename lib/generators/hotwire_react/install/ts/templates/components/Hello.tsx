@@ -7,7 +7,7 @@ type HelloProps = {
 const Hello = ({ name }: HelloProps) => {
   if (name === undefined) {
     return (
-      <h1>Hello from TurboReact!</h1>
+      <h1>Hello from HotwireReact!</h1>
     )
   }
   

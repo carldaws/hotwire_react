@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in turbo_react.gemspec
+# Specify your gem's dependencies in hotwire_react.gemspec
 gemspec
 
 gem "rake", "~> 13.0"

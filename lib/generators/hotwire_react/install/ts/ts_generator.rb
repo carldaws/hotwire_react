@@ -1,12 +1,12 @@
-module TurboReact
+module HotwireReact
   module Generators
     module Install
       class TsGenerator < Rails::Generators::Base
         source_root File.expand_path('templates', __dir__)
 
         def copy_setup_script
-          copy_file "setup_turbo_react.sh", "bin/setup_turbo_react.sh"
-          chmod "bin/setup_turbo_react.sh", 0755
+          copy_file "setup_hotwire_react.sh", "bin/setup_hotwire_react.sh"
+          chmod "bin/setup_hotwire_react.sh", 0755
         end
 
         def copy_ts_config
@@ -34,7 +34,7 @@ module TurboReact
         end
 
         def add_yarn_dependencies
-          run "bin/setup_turbo_react.sh"
+          run "bin/setup_hotwire_react.sh"
         end
       end
     end

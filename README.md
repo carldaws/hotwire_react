@@ -1,15 +1,15 @@
-# TurboReact
+# HotwireReact
 
-TurboReact is a Ruby gem that seamlessly integrates React into Rails 7 projects using esbuild. 
+HotwireReact is a Ruby gem that seamlessly integrates React into Rails 7 projects using esbuild. 
 
 It allows you to create React components in the app/javascript/components directory and include them in your Rails views with a <%= component "ComponentName" %> helper. 
 
-This gem is designed to work alongside Hotwire/Turbo, providing a useTurboFetch hook to allow React components to send JSON to Rails controllers and receive back and render TurboStreams.
+This gem is designed to work alongside Hotwire, providing a useTurboFetch hook to allow React components to send JSON to Rails controllers and receive back and render TurboStreams.
 
 ## Features
 
 - **Easy Integration**: Add React components to your Rails views effortlessly.
-- **Hotwire/Turbo Compatibility**: Use the useTurboFetch hook for seamless integration with TurboStreams.
+- **Hotwire/ Compatibility**: Use the useTurboFetch hook for seamless integration with TurboStreams.
 - **JavaScript and TypeScript Support**: Write your components in either JavaScript or TypeScript.
 - **Automatic Setup**: Installs react and react-dom (and types and TypeScript, if using) and sets up your project with necessary files.
 
@@ -25,7 +25,7 @@ rails new my_app -j esbuild
 Add this line to your application's Gemfile:
 
 ```
-gem 'turbo_react'
+gem 'hotwire_react'
 ```
 
 And then execute:
@@ -37,8 +37,8 @@ bundle install
 Next, run the install generator:
 
 ```
-rails generate turbo_react:install:js # for JavaScript
-rails generate turbo_react:install:ts # for TypeScript
+rails generate hotwire_react:install:js # for JavaScript
+rails generate hotwire_react:install:ts # for TypeScript
 ```
 
 This will install the necessary JavaScript dependencies and copy the required files into your app/javascript directory.
@@ -59,7 +59,7 @@ type HelloProps = {
 const Hello = ({ name }: HelloProps) => {
   if (name === undefined) {
     return (
-      <h1>Hello from TurboReact!</h1>
+      <h1>Hello from HotwireReact!</h1>
     )
   }
   
@@ -141,11 +141,11 @@ Here turboFetch replaces the standard fetch call.
 
 ## Configuration
 
-By default, TurboReact will automatically configure your Rails application. If you need to customize the setup, you can modify the generated files in the app/javascript directory.
+By default, HotwireReact will automatically configure your Rails application. If you need to customize the setup, you can modify the generated files in the app/javascript directory.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/carldaws/turbo_react.
+Bug reports and pull requests are welcome on GitHub at https://github.com/carldaws/hotwire_react.
 
 ## License
 
